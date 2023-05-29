@@ -9,7 +9,7 @@ public class DvdMapper implements RowMapper<DVD>{
 
 	@Override
 	public DVD mapRow(ResultSet resultSet, int i) throws SQLException {
-		if(!resultSet.next()) return null;
+		//if(!resultSet.next()) return null;
 		DVD dvd = new DVD();
 		
 		dvd.setTitle(resultSet.getString("title"));
